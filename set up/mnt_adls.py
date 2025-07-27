@@ -19,17 +19,3 @@ for mountPoint in mountPoints:
 
 dbutils.fs.mounts()
 
-# COMMAND ----------
-
-spark.conf.set(
-  "fs.azure.account.key.sahrms.blob.core.windows.net",
-  "KMbYMQXzdJpTZ6smJ6HZmLFAPmxH2SiDXr+Bz7NzUw0o+Xl3T6yrtecwmb8c+bIsD4lndl1+dacu+AStygegeA=="
-)
-
-# COMMAND ----------
-
-dbutils.fs.ls("wasbs://bronze@sahrms.blob.core.windows.net/")
-
-# COMMAND ----------
-
-dbutils.fs.ls("/mnt/bronze")
